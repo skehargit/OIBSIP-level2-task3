@@ -1,11 +1,5 @@
-var ulList = document.querySelector('ul');
-        ulList.addEventListener('click', function (ev) {
-            if (ev.target.tagName === 'LI') {
-                ev.target.classList.toggle('checked');
-                document.getElementById("change_text").innerHTML = "Task completed";
-            }
-        }, false);
-        function addList() {
+
+      var addList=()=> {
             var li = document.createElement("li");
             var inputValue = document.getElementById("listInput").value;
             var t = document.createTextNode(inputValue);
@@ -28,7 +22,7 @@ var ulList = document.querySelector('ul');
             span.appendChild(txt);
             li.appendChild(span);
 
-            for (i = 0; i < close.length; i++) {
+            for (var i = 0; i < close.length; i++) {
                 close[i].onclick = function () {
                     var div = this.parentElement;
                     div.style.display = "none";
@@ -36,10 +30,17 @@ var ulList = document.querySelector('ul');
             }
         }
         var close = document.getElementsByClassName("close");
-        var i;
-        for (i = 0; i < close.length; i++) {
+        for (var i = 0; i < close.length; i++) {
             close[i].onclick = function () {
                 var div = this.parentElement;
                 div.style.display = "none";
             }
         }
+
+        var ulList = document.querySelector('ul');
+        ulList.addEventListener('click', function (ev) {
+            if (ev.target.tagName === 'LI') {
+                ev.target.classList.toggle('checked');
+                document.getElementById("change_text").innerHTML = "Task completed";
+            }
+        }, false);

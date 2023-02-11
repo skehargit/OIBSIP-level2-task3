@@ -1,11 +1,12 @@
 * {
-    box-sizing: border-box;
+    
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     background: var(--color1);
-    font-family:'Quicksand', sans-serif;
+    font-family:sans-serif;
 }
 :root {
     --color1: rgb(50, 177, 188);
@@ -49,7 +50,6 @@ input {
 }
 
 .addBtn:hover {
-
     background-color: rgba(18, 224, 18, 0.144);
 }
 .middle{
@@ -72,15 +72,13 @@ h1{
     justify-content: center;
 }
 ul {
-    margin: 0;
-    padding: 0;
     margin-top: 20px;
 }
 
 ul li {
     cursor: pointer;
     position: relative;
-    padding: 12px 8px 12px 40px;
+    padding: 12px;
     background: var(--color2);
     color: white;
     font-size: 18px;
