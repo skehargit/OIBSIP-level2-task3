@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+    <link rel="icon" href="img-1.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="myDIV" class="header">
+        <h1>TO DO LIST </h1>
+        <div class="middle">
+            <input type="text" id="listInput" placeholder="Enter List ..." maxlength="25">
+            <span onclick="addList()" class="addBtn">Add</span>
+        </div>
+        <div class="text">
+            <p id="change_text">Add Your Task</p>
+        </div>
+    </div>
+    <div class="list">
+        <ul id="UL">
+        </ul>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
