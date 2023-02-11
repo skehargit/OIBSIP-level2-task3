@@ -118,7 +118,7 @@ ul li.checked::before {
     top: 2px;
     bottom: 2px;
     padding: 10px 15px;
-    transition-duration: 0.5s;
+    transition-duration: 0.4s;
 }
 
 .close:hover {
